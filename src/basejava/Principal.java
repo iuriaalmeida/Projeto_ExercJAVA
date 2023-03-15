@@ -16,5 +16,7 @@ public class Principal {
         System.out.println(numero.parImpar());
 
         System.out.println(numero.maior(7, 5));
+
+        System.out.println(numero.ordemcresc(9, 2, 7));
     }
 }
