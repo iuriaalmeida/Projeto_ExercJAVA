@@ -1,4 +1,4 @@
-package basejava;
+package basejava.numeros;
 
 import java.util.Scanner;
 
