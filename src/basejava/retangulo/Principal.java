@@ -22,12 +22,21 @@ public class Principal {
                     retangulo.setAltura(Float.parseFloat(dadosEntrada));
                     JOptionPane.showMessageDialog(null, ""
                         + "Tamanho da base: " + retangulo.getBase() + "\n"
-                        + "Area do Quadrado: " + quadrado.calcularArea() + "\n");
+                        + "Tamanho da altura: " + retangulo.getAltura() + "\n"
+                        + "Area do Retangulo: " + retangulo.calcularArea() + "\n"
+                        + "Perímetro do Retangulo: " + retangulo.calcularPeri() + "\n");
                     retangulo.add(retangulo);
                 }                    
             } catch (Exception e){
-                JOptionPane
+                JOptionPane.showMessageDialog(null, "Valor Inválido!");
+                dadosEntrada = "";
             }
         }
+        String saidaDados = "";
+        for (int index = 0; index < retangulos.size(); index++){
+            saidaDados += "Base: " + retangulos.get(index).getBase() + " - Altura: " + retangulos.get(index).getAltura() + " - Area: " + retangulos.get(index).calcularArea() + " - Perímetro: " + retangulos.get(index).calcularPeri() + "\n";
+        }
+        JOptionPane.showMessageDialog(null, ""
+            + "Lista de Retângulos ("+");
     }
 }
